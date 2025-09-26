@@ -1,0 +1,71 @@
+body {
+	background-image: url("Fotos/collage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+/*
+button{
+	background-color: red;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 12px;
+
+	font-size: 70px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 20px;
+}
+
+button:disabled{
+	background-color: darkred;
+}*/
+
+button {
+	/* Variables */
+	--button_radius: 0.75em;
+	--button_color: darkred;
+	--button_outline_color: black;
+	font-size: 17px;
+	font-weight: bold;
+	border: none;
+	cursor: pointer;
+	border-radius: var(--button_radius);
+	background: var(--button_outline_color);
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 5px;
+	font-family:"Comic Sans MS","Comic Sans",cursive;
+	}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: white;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  /* Pull the button upwards when hovered */
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  /* Push the button downwards when pressed */
+  transform: translateY(0);
+}
